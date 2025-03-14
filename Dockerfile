@@ -5,7 +5,7 @@ FROM ubuntu:latest AS sdk
 RUN apt update && apt install -y build-essential git
 
 # Install SDK
-RUN git clone https://github.com/Scene-Collective/ps4-payload-sdk ~/ps4-payload-sdk &&\
+RUN git clone https://github.com/home-bru/ps4-payload-sdk ~/ps4-payload-sdk &&\
  cd ~/ps4-payload-sdk &&\
  chmod +x install.sh &&\
  ./install.sh
