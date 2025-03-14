@@ -16,7 +16,7 @@ jobs:
     steps:
       -
         name: "Checkout"
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       -
         name: "Setup Environment"
         run: |
@@ -30,13 +30,13 @@ jobs:
           make
       -
         name: "Upload Binary Artifact"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           path: ./*.bin
           if-no-files-found: error
       -
         name: "Upload Map Artifact"
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           path: ./*.map
           if-no-files-found: error
