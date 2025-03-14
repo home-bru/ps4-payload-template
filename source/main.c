@@ -6,11 +6,7 @@ int _main(struct thread *td) {
   initKernel();
   initLibc();
 
-  jailbreak();
-
-  initSysUtil();
-
-  printf_notification("Hello World!");
+  printf_notification("Hello World");
 
   return 0;
 }
